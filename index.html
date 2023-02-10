@@ -3,35 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>스파르타코딩클럽 | HTML 기초</title>
+    <title>2023년 버킷리스트</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap');
+        *{
+            font-family: 'Hahmlet', serif;
+        }
+        .title {
+            color: white;
+            background-color: tomato;
+            font: size 24px;
+            padding: 4px 8px;
+            border-radius: 8px;
+        }
+
+        .bg {
+            width: 360px;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+        }
+
+        .msg {
+            font-weight: bold;
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
 </head>
 
-<body>
-    <!-- 구역을 나누는 태그들 -->
-    <div>나는 구역을 나누죠</div>
-    <p>나는 문단이에요</p>
-    <ul>
-        <li> bullet point!1 </li>
-        <li> bullet point!2 </li>
-    </ul>
+<body class="bg-t3 center">
+    <h1 class="title-t4">2023 신년계획</h1>
+    <p class="msg">올해는 꼭 모두 지키자!</p>
+    <div class="row flex-row wrap">
+        <div class="bucket img1-t2 center">고혈압 낮추기</div>
+        <div class="bucket img2-t5 center done">식생활 개선하기</div>
+        <div class="bucket img2-t4 center">등산하기</div>
+        <div class="bucket img1-t4 center">코딩 공부하기</div>
+        <div class="bucket img1-t2 center">일본어 배우기</div>
+        <div class="bucket img2-t5 center">이용사 실무 배우기</div>
+    </div>
 
-    <!-- 구역 내 콘텐츠 태그들 -->
-    <h1>h1은 제목을 나타내는 태그입니다. 페이지마다 하나씩 꼭 써주는 게 좋아요. 그래야 구글 검색이 잘 되거든요.</h1>
-    <h2>h2는 소제목입니다.</h2>
-    <h3>h3~h6도 각자의 역할이 있죠. 비중은 작지만..</h3>
-    <hr>
-    span 태그입니다: 특정 <span style="color:red">글자</span>를 꾸밀 때 써요
-    <hr>
-    a 태그입니다: <a href="http://naver.com/"> 하이퍼링크 </a>
-    <hr>
-    img 태그입니다: <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
-    <hr>
-    input 태그입니다: <input type="text" />
-    <hr>
-    button 태그입니다: <button> 버튼입니다</button>
-    <hr>
-    textarea 태그입니다: <textarea>나는 무엇일까요?</textarea>
 </body>
 
 </html>
