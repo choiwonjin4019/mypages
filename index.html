@@ -6,16 +6,34 @@
       .img-container {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
       }
 
       .img-container img {
         max-width: 100%;
         height: auto;
         transition: transform 0.2s ease-in-out;
+        margin: 10px;
+        position: relative;
       }
 
       .img-container img:hover {
         transform: scale(1.2);
+      }
+
+      .img-container img span {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
       }
     </style>
   </head>
@@ -27,22 +45,22 @@
         src="applemint.jpg"
         alt="Apple Mint"
         data-description="applemint_description.html"
-      />
+      /><span>Apple Mint</span>
       <img
         src="chocomint.jpg"
         alt="Chocolate Mint"
         data-description="chocomint_description.html"
-      />
+      /><span>Chocolate Mint</span>
       <img
         src="spearmint.jpg"
         alt="Spearmint"
         data-description="spearmint_description.html"
-      />
+      /><span>Spearmint</span>
       <img
         src="lemonbalm.jpg"
         alt="Lemon Balm"
         data-description="lemonbalm_description.html"
-      />
+      /><span>Lemon Balm</span>
     </div>
     <script>
       const images = document.querySelectorAll(".img-container img");
