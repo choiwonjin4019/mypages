@@ -1,78 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Herbs Website</title>
-    <style>
-      .img-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .img-container img {
-        width: 200px;
-        height: 200px;
-        transition: transform 0.2s ease-in-out;
-        margin: 10px;
-        position: relative;
-      }
-
-      .img-container img:hover {
-        transform: scale(1.2);
-      }
-
-      .img-container img span {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 5px;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 16px;
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-      }
-    </style>
+    <title>우리 결혼합니다!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>양평텃밭의 허브들</h1>
-    <p>허브들의 모양과 특징을 알아봅시다:</p>
-    <div class="img-container">
-      <img
-        src="applemint.jpg"
-        alt="Apple Mint"
-        data-description="applemint_description.html"
-      /><span>Apple Mint</span>
-      <img
-        src="chocomint.jpg"
-        alt="Chocolate Mint"
-        data-description="chocomint_description.html"
-      /><span>Chocolate Mint</span>
-      <img
-        src="spearmint.jpg"
-        alt="Spearmint"
-        data-description="spearmint_description.html"
-      /><span>Spearmint</span>
-      <img
-        src="lemonbalm.jpg"
-        alt="Lemon Balm"
-        data-description="lemonbalm_description.html"
-      /><span>Lemon Balm</span>
-    </div>
-    <script>
-      const images = document.querySelectorAll(".img-container img");
-      images.forEach((img) => {
-        img.addEventListener("click", () => {
-          const descriptionWindow = window.open(
-            img.getAttribute("data-description"),
-            "description",
-            "width=500,height=500"
-          );
-        });
-      });
-    </script>
+    <header>
+      <h1>우리 결혼합니다!</h1>
+    </header>
+          <section>
+        <h2>초대글</h2>
+        <p>저희 결혼식에 초대합니다.</p>
+        <p>다사다난한 시절을 보내면서 사랑의 결실을 맺게 되었습니다</p>
+        <p>청년들의 용기와 미래의 계획을 위해 박수를 보냅니다.</p>
+        <p>건강하고 행복한 신혼생활이 되기를 바랍니다.</p>
+        <p>오셔서 격려와 축부해 주시기 바랍니다.</p>
+        <p>기도와 수아의 결혼식에 참석해주시면 감사하겠습니다.</p>
+      </section>
+      
+    <section></section>  
+      <h2>일시 및 장소</h2>
+      <p>2024년 6월 15일 (토) 오후 2시</p>
+      <p>강남 국제회의장</p>
+    </section>
+    <section>
+      <h2>신랑과 신부</h2>
+      <div class="couple">
+        <img src="bride.jpg" alt="신랑 이미지" />
+        <h3>신랑: 박기도</h3>
+      </div>
+      <div class="couple">
+        <img src="bride.jpg" alt="신부 이미지" />
+        <h3>신부: 최수아</h3>
+      </div>
+    </section>
+    <section>
+      <h2>축하금 계좌</h2>
+      <p>우리은행 1002-157-314966 (최수아)</p>
+      <p>신랑신부 두 분을 위해 축하금을 보내주세요!</p>
+    </section>
+    <section>
+      <h2>축하연회장</h2>
+      <p>서울 신라호텔 그랜드볼룸</p>
+      <p>오후 3시</p>
+    </section>
+
+    <section>
+      <h2>예식 카운트다운</h2>
+      <p id="countdown"></p>
+    </section>
+
+    <footer>
+      <p>문의: 010-4505-2540(최수아)</p>
+      <p>문의: 010-7649-2545(최원진)</p>
+      <p>문의: 010-8902-2545(김현숙)</p>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
